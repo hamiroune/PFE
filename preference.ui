@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>preference</class>
+ <widget class="QWidget" name="preference">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>preference</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Interpolator</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>88</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCheckBox" name="checkBox_linear">
+       <property name="text">
+        <string>Linear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_nneighbor">
+       <property name="text">
+        <string>NNeighbor</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_BCO">
+       <property name="text">
+        <string>BCO</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>381</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Elivation</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>119</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="checkBox_DEM_Folder">
+       <property name="text">
+        <string>DEM Folder</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_Default_elivation">
+       <property name="text">
+        <string>Defailt Elivation</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_DEM">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_DEM">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSliderElivation">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>90</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>381</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Algorithm</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>308</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QCheckBox" name="checkBox_Rcs">
+       <property name="text">
+        <string> Simple_Rcs_PanSharpening_FusionImage_Filter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_Lmvm">
+       <property name="text">
+        <string>Lmvm_PanSharpening_Fusion_Image_Filter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>381</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Radius</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>99</width>
+      <height>53</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Radius X&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="spinBox_X"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Radius Y&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="spinBox_Y"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WindowClass</class>
+ <widget class="QMainWindow" name="WindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>859</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Window</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="file" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menu_Open_Image_Ctrl_O">
+     <property name="title">
+      <string> Open Image           Ctrl+O</string>
+     </property>
+     <addaction name="actionInput_PAN_Image"/>
+     <addaction name="actionInput_XS_Image"/>
+    </widget>
+    <addaction name="menu_Open_Image_Ctrl_O"/>
+    <addaction name="actionTo_leave_Ctrl_Q"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="action_preference"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSave">
+    <property name="title">
+     <string>Save</string>
+    </property>
+    <addaction name="actionOutput_Image"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSave"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionTo_leave_Ctrl_Q">
+   <property name="text">
+    <string> Leave                      Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionInput_PAN_Image">
+   <property name="text">
+    <string>Input PAN Image</string>
+   </property>
+  </action>
+  <action name="actionInput_XS_Image">
+   <property name="text">
+    <string>Input XS Image</string>
+   </property>
+  </action>
+  <action name="actionOutput_Image">
+   <property name="text">
+    <string>Output Image</string>
+   </property>
+  </action>
+  <action name="action_preference">
+   <property name="text">
+    <string>preference</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>file</class>
+   <extends>QToolBar</extends>
+   <header>file.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Window.qrc"/>
+ </resources>
+ <connections/>
+</ui>
